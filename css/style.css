@@ -1,0 +1,42 @@
+body{
+    font-family: 'Gilroy', 'Arial Narrow', Arial, sans-serif;
+    padding: 0 20px;
+}
+h1{
+    font-size:32px;
+    font-weight: 700;
+}
+h2{
+    font-size:28px;
+    font-weight: 600;
+}
+li, p{
+    font-size:24px;
+    font-weight: 500;
+    line-height: 34px;
+}
+.container{
+    max-width:1040px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header, header>nav>ul{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
+    width:30%;
+}
+nav>ul{
+    list-style-type: none;
+}
+main{
+display: flex;
+}
+.block-left img{
+    max-width:400px;
+}
+.block-right{
+    padding-left: 20px;
+    }
