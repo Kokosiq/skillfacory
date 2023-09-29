@@ -1,42 +1,79 @@
-body{
+body {
     font-family: 'Gilroy', 'Arial Narrow', Arial, sans-serif;
-    padding: 0 20px;
+    margin: 0;
 }
-h1{
-    font-size:32px;
+
+h1 {
+    font-size: 32px;
     font-weight: 700;
 }
-h2{
-    font-size:28px;
+
+h2 {
+    font-size: 28px;
     font-weight: 600;
 }
-li, p{
-    font-size:24px;
+
+li,
+p {
+    font-size: 24px;
     font-weight: 500;
     line-height: 34px;
 }
-.container{
-    max-width:1040px;
+
+.container {
+    max-width: 1040px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 20px;
 }
-header, header>nav>ul{
-    display:flex;
+
+header,
+header>nav>ul {
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
-nav{
-    width:30%;
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
-nav>ul{
+
+.navigation-menu,
+.navigation-conect {
     list-style-type: none;
 }
-main{
-display: flex;
+
+.navigation-menu {
+    width: 70%;
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.block-left img{
-    max-width:400px;
+
+.navigation-conect {
+    width: 100px;
 }
-.block-right{
+
+main {
+    display: flex;
+}
+
+.block-left img {
+    max-width: 400px;
+}
+
+.block-right {
     padding-left: 20px;
-    }
+}
+
+footer {
+    background-color: cornflowerblue;
+    padding-top:20px;
+    padding-bottom: 30px;
+}
+
+footer svg{
+    fill: #fff;
+}
