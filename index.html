@@ -1,63 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="rj">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My proect№1</title>
-    <link href="css/font.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="/css/font.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<body class="container">
-    <header>
-        <div>
-            Немного обо мне
-        </div>
+
+<body>
+    <header class="container">
         <nav>
-            <ul>
-                <li><a href="tel:+79605198808"><img src="icon/call_black_24dp.svg"></a></li>
-                <li><a href="mailto:rudenko-bar@mail.ru"><img src="icon/email_black_24dp.svg"></a></li>
-                <li><a href="https://t.me/Kokosiq" target="_blank"><img src="icon/iconmonstr-telegram-1.svg"></a></li>
+            <ul class="navigation-menu">
+                <li><a href="#about" aria-label="якорь меню которое ведет на блок 'обо мне'">обо мне</a></li>
+                <li><a href="#education" aria-label="якорь меню которое ведет на блок 'образование'">образование</a>
+                </li>
+                <li><a href="#job" aria-label="якорь меню которое ведет на блок 'опыт работы'">опыт работы</a></li>
+                <li><a href="#hobbies" aria-label="якорь меню которое ведет на блок 'хобби'">хобби</a></li>
+                <li><a href="#now" aria-label="якорь меню которое ведет на блок 'как я становился разработчиком'">Как я
+                        становился разработчиком</a></li>
+            </ul>
+            <ul class="navigation-conect">
+                <li><a href="tel:+79605198808" aria-label="позвонить">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                            fill="#000000" aria-hidden="true">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="mailto:rudenko-bar@mail.ru" aria-label="написать чкерез почту">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                            fill="#000000" aria-hidden="true">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="https://t.me/Kokosiq" target="_blank" aria-label="перейти в телеграмм">
+                        <svg width="24px" height="24px" version="1.1" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xml:space="preserve" xmlns:serif="http://www.serif.com/"
+                            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                            <path id="telegram-1"
+                                d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z" />
+                        </svg>
+                    </a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="block-left">
-            <img src="img/foto.png">
-        </div>
-        <div class="block-right">
-            <h1>Рудекно Олег Алекандрович</h1>
-            <h2>Немного обо мне</h2>
-            <ul>
+    <main class="container">
+        <section class="block-left">
+            <img src="/img/foto.png" alt="фотография">
+        </section>
+        <article class="block-right">
+            <section id="about">
+                <h1>Рудекно Олег Алекандрович</h1>
+                <h2>Немного обо мне</h2>
                 <li>Живу: Калуга</li>
                 <li>Возвраст: 31 год</li>
-                <li>До it: 
-                    <ul>
-                        <li>строитель</li>
-                        <li>официант</li>
-                        <li>бармен</li>
-                        <li>старший бармен</li>
-                        <li>брентд бармен</li>
-                        <li>антикризисный бармен</li>
-                        <li>бариста</li>
-                        <li>ген.директор</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2>Мой опыт в IT</h2>
-            <p>
-                Уже более года работаю на "Kwork" - биржа фрилансеров
-            </p>
-            <h2>трудности с которыми я сталкиваюсь</h2>
-            <ol>
-                <li>Не адекватные заказчики</li>
-                <li>Нехватка знаний</li>
-                <li>Незакрытая ";" ))</li>
-            </ol>
-            
-        </div>
+            </section>
+            <section id="education">
+                <h2>Образование</h2>
+                <ul>
+                    <li>Образование законченное:
+                        <ul>
+                            <li>...</li>
+                        </ul>
+                    </li>
+                    <li>Образование не законченное:
+                        <ul>
+                            <li>матиматик-информатик с правом преподования</li>
+                            <li>наладчик технологического оборудования</li>
+                            <li> и еще 2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section id="job">
+                <h2>Опыт работы</h2>
+                <p>
+                    12 лет в общепите на разных должностях от официанта до генирального директора
+                </p>
+                <p>На данный момент работаю вэб-разработчиком уже год, начинал с "kwork", сейчас в основно работаю на
+                    постоянников</p>
+                <h3>Основные трудности с которыми я сталкнулся во время работы</h3>
+                <p>за время работы сильно мешало <strong>незнание js</strong>, славо богу придумали gpt4, и
+                    <em>"тупорылие"</em> заказчики
+                </p>
+            </section>
+            <section id="hobbies">
+                <h2>Мои хоби</h2>
+                <ul>
+                    <li>Гастро trip</li>
+                    <li>Активные путешествия</li>
+                    <li>настольный тенис</li>
+                </ul>
+            </section>
+            <section id="now">
+                <h2>Как я становился разработчиком</h2>
+                <ul>
+                    <li><time datetime="2000-12-25">25.12.2000</time></li>
+                    <li><time datetime="2001-12-15">15.12.2001</time></li>
+                    <li><time datetime="1998-15-15">15.15.1998</time></li>
+                </ul>
+                <p>
+                    в баре познакомился с подвыпившим человеком(в 4 утра и это был мой будущий колега), который всю
+                    жизнь мечтал быть <b>барменом</b>, я как раз тогда открывал новый проэкт и выступал как
+                    <b>бренд-барменеджер</b>, в итоге посел 4 месяцев работы в месте, я узнал про его <em>"супер
+                        план"</em> - он хотел снять котедж в сочи и собрать команду людей которых обучит работать
+                    верстке, не все так гладко получилось... но итог - мы сняли офис, я смотрел пиратские уроки
+                    спрашивал что не понимал и обучался работе с "elementorom"
+                </p>
+            </section>
+        </article>
     </main>
     <footer>
+        <ul class="navigation-conect">
+            <li><a href="tel:+79605198808" aria-label="позвонить">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                        fill="#000000" aria-hidden="true">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
+                    </svg></a></li>
+            <li><a href="mailto:rudenko-bar@mail.ru" aria-label="написать чкерез почту">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                        fill="#000000" aria-hidden="true">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                    </svg></a></li>
+            <li><a href="https://t.me/Kokosiq" target="_blank" aria-label="перейти в телеграмм">
+                    <svg width="24px" height="24px" version="1.1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                        xmlns:serif="http://www.serif.com/"
+                        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                        <path id="telegram-1"
+                            d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z" />
+                    </svg>
+                </a></li>
+        </ul>
 
     </footer>
 </body>
+
 </html>
